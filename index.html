@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>DannyEdits — Video editor for creators</title>
+  <title>EditByDanny — Video editor for creators</title>
   <meta name="description" content="Danny — video editor for creators. Clear communication, real deadlines, and videos you're proud of.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,10 +14,10 @@
 
   <!-- ============ NAV ============ -->
   <header class="nav">
-    <a href="#top" class="logo">DANNY<span>EDITS</span></a>
+    <a href="#top" class="logo">EDITBY<span>DANNY</span></a>
     <nav class="nav-links">
       <a href="#work">Work</a>
-      <a href="#clients">Clients</a>
+      <a href="#clients" class="nav-clients">Clients</a>
       <a href="#about">About</a>
       <a href="#contact" class="nav-cta">Work with me</a>
     </nav>
@@ -28,7 +28,6 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <!-- Replace assets/hero.jpg with your photo (tall/portrait works best) -->
       <div class="hero-media" style="background-image:url('assets/hero.jpg')" aria-hidden="true"></div>
 
       <div class="hero-content">
@@ -36,8 +35,7 @@
 
         <h1 class="hero-title">Editing made <span class="accent">easy.</span></h1>
 
-        <!-- SHOWREEL: replace SHOWREEL_ID with your YouTube video ID -->
-        <div class="yt hero-reel" data-id="SHOWREEL_ID" data-title="Danny's showreel">
+        <div class="yt hero-reel" data-id="lNMr1pJaIF8" data-title="Danny's showreel">
           <span class="yt-label">Showreel</span>
           <button class="yt-play" aria-label="Play showreel"></button>
           <span class="yt-hint">Tap for sound</span>
@@ -58,15 +56,17 @@
     <section class="trusted reveal">
       <p class="trusted-label">Trusted by:</p>
       <ul class="trusted-list">
-        <!-- Add a circle per creator. Image goes in assets/ -->
         <li title="Josh Beam"><span class="avatar lg"><img src="assets/josh-beam.jpg" alt="Josh Beam" onerror="this.remove()">JB</span></li>
-        <li title="Josh Beam BJJ Extra"><span class="avatar lg"><img src="assets/josh-beam-extra.jpg" alt="Josh Beam BJJ Extra" onerror="this.remove()">JBX</span></li>
         <li title="Dan Martin"><span class="avatar lg"><img src="assets/dan-martin.jpg" alt="Dan Martin" onerror="this.remove()">DM</span></li>
         <li title="Cyfal"><span class="avatar lg"><img src="assets/cyfal.jpg" alt="Cyfal" onerror="this.remove()">CY</span></li>
+        <li title="BradyYourTutor"><span class="avatar lg"><img src="assets/brady.jpg" alt="BradyYourTutor" onerror="this.remove()">BT</span></li>
       </ul>
     </section>
 
-    <!-- ============ WORK (horizontal scroll) ============ -->
+    <!-- ============ WORK (horizontal scroll) ============
+         Each card's data-id is the YouTube video ID.
+         Add class "short" to a card for vertical (Shorts) videos.
+         A card whose ID is still a placeholder (ALL_CAPS) stays hidden. -->
     <section class="work" id="work">
       <div class="work-pin">
         <div class="work-head">
@@ -78,32 +78,20 @@
         </div>
 
         <div class="work-track">
-          <!-- Replace each data-id with the YouTube video ID (the part after watch?v=) -->
           <article class="work-card">
-            <div class="yt" data-id="JOSH_VIDEO_ID" data-title="The weirdest rule in judo (or is it?)">
-              <button class="yt-play" aria-label="Play video"></button>
+            <div class="yt" data-id="CrQhd1IAeGg" data-title="Josh Beam video">
+              <button class="yt-play" aria-label="Play Josh Beam video"></button>
             </div>
             <div class="work-meta">
               <h3>Josh Beam — 150K Subscribers</h3>
               <span class="tag mono">BJJ · Martial arts</span>
             </div>
-            <p class="work-title">The weirdest rule in judo (or is it?)</p>
+            <p class="work-title">Long-form YouTube</p>
           </article>
 
           <article class="work-card">
-            <div class="yt" data-id="DAN_VIDEO_ID_1" data-title="I put the 7 Japanese longevity foods in one soup">
-              <button class="yt-play" aria-label="Play video"></button>
-            </div>
-            <div class="work-meta">
-              <h3>Dan Martin — 77K Subscribers</h3>
-              <span class="tag mono">Food · Health</span>
-            </div>
-            <p class="work-title">I put the 7 Japanese longevity foods in one soup</p>
-          </article>
-
-          <article class="work-card">
-            <div class="yt" data-id="DAN_VIDEO_ID_2" data-title="How this one Japanese meal structure solved my biggest problem">
-              <button class="yt-play" aria-label="Play video"></button>
+            <div class="yt" data-id="OFmrd_warpQ" data-title="How this one Japanese meal structure solved my biggest problem">
+              <button class="yt-play" aria-label="Play Dan Martin video"></button>
             </div>
             <div class="work-meta">
               <h3>Dan Martin — 77K Subscribers</h3>
@@ -113,14 +101,35 @@
           </article>
 
           <article class="work-card">
-            <div class="yt" data-id="CYFAL_VIDEO_ID" data-title="Can you still blow up a type beat channel in 2026?">
-              <button class="yt-play" aria-label="Play video"></button>
+            <div class="yt" data-id="RY93N2FonpY" data-title="Cyfal VSL">
+              <button class="yt-play" aria-label="Play Cyfal VSL"></button>
             </div>
             <div class="work-meta">
-              <h3>Cyfal — 6.7K Subscribers</h3>
+              <h3>Cyfal — 14K Subscribers</h3>
               <span class="tag mono">Music production</span>
             </div>
-            <p class="work-title">Can you still blow up a type beat channel in 2026?</p>
+            <p class="work-title">VSL — video sales letter</p>
+          </article>
+
+          <article class="work-card short">
+            <div class="yt" data-id="xj_0CrsMus8" data-title="BradyYourTutor short">
+              <button class="yt-play" aria-label="Play BradyYourTutor short"></button>
+            </div>
+            <div class="work-meta">
+              <h3>BradyYourTutor</h3>
+              <span class="tag mono">Short form</span>
+            </div>
+          </article>
+
+          <!-- J&E Remodelling: replace JE_VIDEO_ID with the YouTube Shorts ID -->
+          <article class="work-card short">
+            <div class="yt" data-id="JE_VIDEO_ID" data-title="J&amp;E Remodelling short">
+              <button class="yt-play" aria-label="Play J&amp;E Remodelling short"></button>
+            </div>
+            <div class="work-meta">
+              <h3>J&amp;E Remodelling — 3.2K Followers</h3>
+              <span class="tag mono">Short form</span>
+            </div>
           </article>
         </div>
       </div>
@@ -138,13 +147,15 @@
           <li><span class="mono accent">03</span>Creative input — I pitch ideas, not just cuts.</li>
         </ul>
       </div>
-      <!-- Replace WHY_VIDEO_ID with a short video of you explaining how you work -->
-      <div class="yt why-video reveal" data-id="WHY_VIDEO_ID" data-title="Why I'm different">
+      <div class="yt why-video reveal" data-id="UL7yYBQuFn8" data-title="Why I'm different">
         <button class="yt-play" aria-label="Play video"></button>
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS (phones) ============ -->
+    <!-- ============ TESTIMONIALS (phones) ============
+         Upload each testimonial to YouTube as an unlisted Short,
+         then replace the ALL_CAPS placeholder with its video ID.
+         Phones with a placeholder stay hidden. -->
     <section class="clients container" id="clients">
       <div class="reveal">
         <p class="kicker">Testimonials</p>
@@ -153,11 +164,7 @@
 
       <div class="phones">
         <figure class="phone-card reveal">
-          <div class="phone">
-            <!-- Add the testimonial video at assets/testimonial-josh.mp4 -->
-            <video src="assets/testimonial-josh.mp4" poster="assets/testimonial-josh.jpg" playsinline preload="metadata"></video>
-            <button class="phone-play" aria-label="Play Josh Beam's testimonial"></button>
-          </div>
+          <div class="phone"><div class="yt yt-phone" data-id="JOSH_TESTIMONIAL_ID" data-title="Josh Beam testimonial"><button class="yt-play" aria-label="Play Josh Beam's testimonial"></button></div></div>
           <figcaption>
             <div class="phone-meta"><b>Josh Beam</b><span class="mono">150K subscribers</span></div>
             <blockquote>“[Paste a short line Josh says in his video here.]”</blockquote>
@@ -165,13 +172,18 @@
         </figure>
 
         <figure class="phone-card reveal">
-          <div class="phone">
-            <video src="assets/testimonial-dan.mp4" poster="assets/testimonial-dan.jpg" playsinline preload="metadata"></video>
-            <button class="phone-play" aria-label="Play Dan Martin's testimonial"></button>
-          </div>
+          <div class="phone"><div class="yt yt-phone" data-id="DAN_TESTIMONIAL_ID" data-title="Dan Martin testimonial"><button class="yt-play" aria-label="Play Dan Martin's testimonial"></button></div></div>
           <figcaption>
             <div class="phone-meta"><b>Dan Martin</b><span class="mono">77K subscribers</span></div>
             <blockquote>“[Paste a short line Dan says in his video here.]”</blockquote>
+          </figcaption>
+        </figure>
+
+        <figure class="phone-card reveal">
+          <div class="phone"><div class="yt yt-phone" data-id="CYFAL_TESTIMONIAL_ID" data-title="Cyfal testimonial"><button class="yt-play" aria-label="Play Cyfal's testimonial"></button></div></div>
+          <figcaption>
+            <div class="phone-meta"><b>Cyfal</b><span class="mono">14K subscribers</span></div>
+            <blockquote>“[Paste a short line Cyfal says in his video here.]”</blockquote>
           </figcaption>
         </figure>
       </div>
@@ -193,114 +205,126 @@
 
     <!-- ============ ABOUT ============ -->
     <section class="about container" id="about">
-      <!-- Replace assets/about.jpg with a photo of you -->
-      <div class="about-photo reveal" style="background-image:url('assets/about.jpg')" role="img" aria-label="Photo of Danny"></div>
+      <div class="about-photo reveal" style="background-image:url('assets/about.jpg')" role="img" aria-label="Danny with his hand raised after winning a BJJ match"></div>
 
       <div class="about-text reveal">
         <p class="kicker">About</p>
         <h2 class="section-title">Hey, I'm Danny!</h2>
 
-        <p>I've seen too many creators get burned by editors who ghost, miss deadlines, and never bring any creativity to their work.</p>
-        <p>I'm here to prove an editor can be the easiest part of your business: clear communication, respect, and a video you're proud of.</p>
+        <p>Before I edited full time, I worked for my local martial arts gym where I managed their social media. Not only did I edit videos, but I also created flyers, came up with different deals, and helped set up smokers with my coach — helping him grow his business in the process. I also ran my own YouTube channel for fun, documenting my own martial arts journey.</p>
+        <p>These experiences helped me understand the ins and outs of running a business, and what making content is like from the perspective of both an editor and a creator. With those experiences, I decided to pursue editing and make something out of it.</p>
+        <p>It was difficult at first, but I began working with multiple creators and improving my editing in the process. I really started to fall in love with editing. Something about building and finishing a story was so satisfying, and I began obsessing over my craft.</p>
+        <p>However, I also started seeing the ugly side of editing. I've seen too many creators get burned by editors who ghost, miss deadlines, and never bring any creativity to their work.</p>
 
         <div class="mission">
           <p class="mono accent">My mission</p>
-          <p class="mission-line">I make editing the easiest part of a creator's business, with clear communication, real deadlines, and videos they're proud of.</p>
+          <p class="mission-line">I'm here to prove an editor can be the easiest part of your business: clear communication, respect, and a video you're proud of.</p>
         </div>
-
-        <p>If you're ready to hand off the edit and get back to creating, let's talk.</p>
       </div>
     </section>
 
-    <!-- ============ FAQ ============ -->
+    <!-- ============ FAQ (hidden for now — delete the comment markers around this section to bring it back) ============
     <section class="faq container">
       <div class="reveal">
         <p class="kicker">FAQ</p>
         <h2 class="section-title">Questions you might have.</h2>
       </div>
-
       <div class="faq-list">
-        <details class="reveal">
-          <summary>What kind of videos do you edit?</summary>
-          <p>Long-form YouTube videos for creators — talking head, educational, documentary-style and tutorial content. I've edited for martial arts, food and health, and music production channels.</p>
-        </details>
-        <details class="reveal">
-          <summary>How much does a video cost?</summary>
-          <p>[Add your pricing here — e.g. "Long-form edits start from $___ per video. Every project gets a fixed quote after our discovery call, so there are no surprises."]</p>
-        </details>
-        <details class="reveal">
-          <summary>How long does it take?</summary>
-          <p>[Add your turnaround here — e.g. "Most videos are delivered within ___ days of receiving footage."] Whatever deadline we agree, I keep.</p>
-        </details>
-        <details class="reveal">
-          <summary>How do I get started?</summary>
-          <p>Send me an email at <a href="mailto:dannyeditsvideos@gmail.com">dannyeditsvideos@gmail.com</a> with a link to your channel. We'll book a quick call and go from there.</p>
-        </details>
-        <details class="reveal">
-          <summary>Why you over a cheaper editor?</summary>
-          <p>Because a cheap edit that's late, needs five rounds of fixes, or never brings an idea to the table isn't cheap. You get reliable communication, real deadlines, and an editor who cares how the video performs.</p>
-        </details>
+        <details class="reveal"><summary>What kind of videos do you edit?</summary><p>Long-form YouTube videos, VSLs and short-form content for creators. I've edited for martial arts, food and health, music production, education and home renovation channels.</p></details>
+        <details class="reveal"><summary>How much does a video cost?</summary><p>[Add your pricing here]</p></details>
+        <details class="reveal"><summary>How long does it take?</summary><p>[Add your turnaround here] Whatever deadline we agree, I keep.</p></details>
+        <details class="reveal"><summary>How do I get started?</summary><p>Send me a message on any of the links below with a link to your channel. We'll book a quick call and go from there.</p></details>
+        <details class="reveal"><summary>Why you over a cheaper editor?</summary><p>Because a cheap edit that's late, needs five rounds of fixes, or never brings an idea to the table isn't cheap. You get reliable communication, real deadlines, and an editor who cares how the video performs.</p></details>
       </div>
     </section>
+    ============ END FAQ ============ -->
 
-    <!-- ============ CONTACT ============ -->
+    <!-- ============ CONTACT ============
+         Replace the three #ADD_... links with your real ones:
+           Instagram  → https://instagram.com/YOURHANDLE
+           X/Twitter  → https://x.com/YOURHANDLE
+           WhatsApp   → https://wa.me/15551234567  (country code + number, digits only)
+         Links still set to #ADD_... stay hidden. -->
     <section class="contact" id="contact">
       <div class="container reveal">
         <h2 class="contact-title">Ready to work <span class="accent">together?</span></h2>
-        <p class="contact-sub">Send me an email — I look forward to hearing from you.</p>
-        <a class="btn btn-primary btn-lg" href="mailto:dannyeditsvideos@gmail.com">dannyeditsvideos@gmail.com</a>
+        <p class="contact-sub">Reach out wherever's easiest — I look forward to hearing from you.</p>
+
+        <ul class="socials">
+          <li><a class="social" href="#ADD_INSTAGRAM" target="_blank" rel="noopener" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span>Instagram</span></a></li>
+          <li><a class="social" href="#ADD_TWITTER" target="_blank" rel="noopener" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span>X / Twitter</span></a></li>
+          <li><a class="social" href="mailto:dannyeditsvideos@gmail.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg><span>Email</span></a></li>
+          <li><a class="social" href="#ADD_WHATSAPP" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></li>
+        </ul>
+
+        <a class="contact-email" href="mailto:dannyeditsvideos@gmail.com">dannyeditsvideos@gmail.com</a>
       </div>
     </section>
   </main>
 
   <footer class="footer container">
-    <span class="logo">DANNY<span>EDITS</span></span>
+    <span class="logo">EDITBY<span>DANNY</span></span>
     <span class="mono">© <span id="year"></span> · Video editor for creators</span>
   </footer>
 
   <script>
+    const isPlaceholder = id => !id || /^[A-Z_0-9]+$/.test(id);
+
+    /* ---------- Hide anything still waiting on a link ---------- */
+    document.querySelectorAll('.work-card, .phone-card').forEach(card => {
+      const yt = card.querySelector('.yt');
+      if (yt && isPlaceholder(yt.dataset.id)) card.remove();
+    });
+    if (!document.querySelector('.phone-card')) {
+      document.getElementById('clients')?.remove();
+      document.querySelector('.nav-clients')?.remove();
+    }
+    document.querySelectorAll('a[href^="#ADD_"]').forEach(a => a.closest('li').remove());
+
     /* ---------- YouTube: lightweight click-to-play ---------- */
     document.querySelectorAll('.yt').forEach(el => {
       const id = el.dataset.id;
-      const isReal = id && !/^[A-Z_0-9]+$/.test(id); // placeholders are ALL_CAPS
-      if (isReal) el.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`;
-      else el.classList.add('yt-empty');
+      if (isPlaceholder(id)) { el.classList.add('yt-empty'); return; }
+      const tall = el.classList.contains('yt-phone') || el.closest('.short');
+      el.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`;
+      if (!tall) { // upgrade to the sharper thumbnail when it exists
+        const hi = new Image();
+        hi.onload = () => { if (hi.naturalWidth > 200) el.style.backgroundImage = `url(${hi.src})`; };
+        hi.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
+      }
       el.addEventListener('click', () => {
-        if (!isReal) return;
-        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0" title="${el.dataset.title || 'YouTube video'}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
+        if (el.classList.contains('yt-playing')) return;
+        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1" title="${el.dataset.title || 'YouTube video'}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
         el.classList.add('yt-playing');
       });
-    });
-
-    /* ---------- Testimonial phones ---------- */
-    document.querySelectorAll('.phone').forEach(phone => {
-      const video = phone.querySelector('video');
-      phone.addEventListener('click', () => {
-        document.querySelectorAll('.phone video').forEach(v => { if (v !== video) { v.pause(); v.parentElement.classList.remove('playing'); } });
-        if (video.paused) { video.play(); phone.classList.add('playing'); }
-        else { video.pause(); phone.classList.remove('playing'); }
-      });
-      video.addEventListener('ended', () => phone.classList.remove('playing'));
     });
 
     /* ---------- Scroll progress + sideways work section ---------- */
     const progress = document.querySelector('.progress');
     const work = document.querySelector('.work');
+    const pin = document.querySelector('.work-pin');
     const track = document.querySelector('.work-track');
     const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
     const desktop = matchMedia('(min-width: 900px)');
     let distance = 0;
 
     function sizeWork() {
+      track.style.transform = '';
       if (desktop.matches && !reduce) {
-        distance = Math.max(0, track.scrollWidth - window.innerWidth + parseFloat(getComputedStyle(track).paddingLeft));
-        work.style.height = `${window.innerHeight + distance}px`;
         work.classList.add('is-pinned');
+        const last = track.lastElementChild;
+        const gutter = parseFloat(getComputedStyle(track).paddingLeft) || 0;
+        // how far the track must travel so the last card ends one gutter from the right edge
+        distance = last ? Math.max(0, last.offsetLeft + last.offsetWidth + gutter - pin.clientWidth) : 0;
+        work.style.height = `${window.innerHeight + distance}px`;
       } else {
-        distance = 0;
-        work.style.height = '';
         work.classList.remove('is-pinned');
-        track.style.transform = '';
+        work.style.height = '';
+        distance = 0;
       }
       onScroll();
     }
@@ -309,8 +333,7 @@
       const max = document.documentElement.scrollHeight - window.innerHeight;
       progress.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
       if (distance) {
-        const start = work.offsetTop;
-        const p = Math.min(1, Math.max(0, (window.scrollY - start) / distance));
+        const p = Math.min(1, Math.max(0, -work.getBoundingClientRect().top / distance));
         track.style.transform = `translate3d(${-p * distance}px,0,0)`;
       }
     }
@@ -318,6 +341,7 @@
     window.addEventListener('scroll', onScroll, { passive: true });
     window.addEventListener('resize', sizeWork);
     window.addEventListener('load', sizeWork);
+    if (document.fonts) document.fonts.ready.then(sizeWork);
     sizeWork();
 
     /* ---------- Reveal on scroll ---------- */
