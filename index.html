@@ -28,22 +28,22 @@
 
     <!-- ============ HERO ============ -->
     <section class="hero">
-      <div class="hero-media" style="background-image:url('hero.jpg')" aria-hidden="true"></div>
+      <div class="hero-media hero-in" style="--d:0s; background-image:url('hero.jpg')" aria-hidden="true"></div>
 
       <div class="hero-content">
-        <p class="eyebrow"><span class="dot"></span><strong>Danny</strong> — Video editor for creators</p>
+        <p class="eyebrow hero-in" style="--d:.7s"><span class="dot"></span><strong>Danny</strong> — Video editor for creators</p>
 
-        <h1 class="hero-title">Editing made <span class="accent">easy.</span></h1>
+        <h1 class="hero-title hero-in" style="--d:.85s">Editing made <span class="accent">easy.</span></h1>
 
-        <div class="yt hero-reel" data-id="lNMr1pJaIF8" data-title="Danny's showreel">
+        <div class="yt hero-reel hero-in" style="--d:1s" data-id="lNMr1pJaIF8" data-title="Danny's showreel">
           <span class="yt-label">Showreel</span>
           <button class="yt-play" aria-label="Play showreel"></button>
           <span class="yt-hint">Tap for sound</span>
         </div>
 
-        <p class="hero-sub"><strong>I'm Danny.</strong> I make editing the easiest part of a creator's business, with clear communication, real deadlines, and videos they're proud of.</p>
+        <p class="hero-sub hero-in" style="--d:1.15s"><strong>I'm Danny.</strong> I make editing the easiest part of a creator's business, with clear communication, real deadlines, and videos they're proud of.</p>
 
-        <div class="hero-ctas">
+        <div class="hero-ctas hero-in" style="--d:1.3s">
           <a href="#contact" class="btn btn-primary">Let's edit your next video <span aria-hidden="true">→</span></a>
           <a href="#work" class="btn btn-ghost">Watch the edits</a>
         </div>
@@ -152,10 +152,7 @@
       </div>
     </section>
 
-    <!-- ============ TESTIMONIALS (phones) ============
-         Upload each testimonial to YouTube as an unlisted Short,
-         then replace the ALL_CAPS placeholder with its video ID.
-         Phones with a placeholder stay hidden. -->
+    <!-- ============ TESTIMONIALS (phones) ============ -->
     <section class="clients container" id="clients">
       <div class="reveal">
         <p class="kicker">Testimonials</p>
@@ -164,26 +161,30 @@
 
       <div class="phones">
         <figure class="phone-card reveal">
-          <div class="phone"><div class="yt yt-phone" data-id="JOSH_TESTIMONIAL_ID" data-title="Josh Beam testimonial"><button class="yt-play" aria-label="Play Josh Beam's testimonial"></button></div></div>
+          <div class="phone vid">
+            <video src="testimonial-josh.mp4" poster="testimonial-josh.jpg" playsinline preload="none"></video>
+            <button class="yt-play" aria-label="Play Josh Beam's testimonial"></button>
+          </div>
           <figcaption>
             <div class="phone-meta"><b>Josh Beam</b><span class="mono">150K subscribers</span></div>
-            <blockquote>“[Paste a short line Josh says in his video here.]”</blockquote>
           </figcaption>
         </figure>
-
         <figure class="phone-card reveal">
-          <div class="phone"><div class="yt yt-phone" data-id="DAN_TESTIMONIAL_ID" data-title="Dan Martin testimonial"><button class="yt-play" aria-label="Play Dan Martin's testimonial"></button></div></div>
+          <div class="phone vid">
+            <video src="testimonial-dan.mp4" poster="testimonial-dan.jpg" playsinline preload="none"></video>
+            <button class="yt-play" aria-label="Play Dan Martin's testimonial"></button>
+          </div>
           <figcaption>
             <div class="phone-meta"><b>Dan Martin</b><span class="mono">77K subscribers</span></div>
-            <blockquote>“[Paste a short line Dan says in his video here.]”</blockquote>
           </figcaption>
         </figure>
-
         <figure class="phone-card reveal">
-          <div class="phone"><div class="yt yt-phone" data-id="CYFAL_TESTIMONIAL_ID" data-title="Cyfal testimonial"><button class="yt-play" aria-label="Play Cyfal's testimonial"></button></div></div>
+          <div class="phone vid">
+            <video src="testimonial-cyfal.mp4" poster="testimonial-cyfal.jpg" playsinline preload="none"></video>
+            <button class="yt-play" aria-label="Play Cyfal's testimonial"></button>
+          </div>
           <figcaption>
             <div class="phone-meta"><b>Cyfal</b><span class="mono">14K subscribers</span></div>
-            <blockquote>“[Paste a short line Cyfal says in his video here.]”</blockquote>
           </figcaption>
         </figure>
       </div>
@@ -239,9 +240,7 @@
     </section>
     ============ END FAQ ============ -->
 
-    <!-- ============ CONTACT ============
-         WhatsApp: replace #WHATSAPP_LINK_HERE with https://wa.me/ + your number
-         (country code + number, digits only, e.g. https://wa.me/15551234567) -->
+    <!-- ============ CONTACT ============ -->
     <section class="contact" id="contact">
       <div class="container reveal">
         <h2 class="contact-title">Ready to work <span class="accent">together?</span></h2>
@@ -254,7 +253,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.234 10.162 22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299-.929-1.329L3.076 1.56h3.182l5.965 8.532.929 1.329 7.754 11.09h-3.182z"/></svg><span>X / Twitter</span></a></li>
           <li><a class="social" href="mailto:dannyeditsvideos@gmail.com" aria-label="Email">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M24 5.457v13.909c0 .904-.732 1.636-1.636 1.636h-3.819V11.73L12 16.64l-6.545-4.91v9.273H1.636A1.636 1.636 0 0 1 0 19.366V5.457c0-2.023 2.309-3.178 3.927-1.964L5.455 4.64 12 9.548l6.545-4.91 1.528-1.145C21.69 2.28 24 3.434 24 5.457z"/></svg><span>Email</span></a></li>
-          <li><a class="social" href="#WHATSAPP_LINK_HERE" aria-label="WhatsApp">
+          <li><a class="social" href="https://wa.me/12034494174" target="_blank" rel="noopener" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></li>
         </ul>
 
@@ -287,6 +286,7 @@
       const v = box.querySelector('video');
       box.addEventListener('click', () => {
         if (box.classList.contains('playing')) return;
+        document.querySelectorAll('.vid video').forEach(o => { if (o !== v) o.pause(); });
         box.classList.add('playing'); v.controls = true; v.play();
       });
     });

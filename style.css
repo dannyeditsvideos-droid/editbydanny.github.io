@@ -208,7 +208,8 @@ section { position: relative; }
 .work-card { flex: none; width: calc(var(--mh) * 16 / 9); scroll-snap-align: start; }
 .work-card .yt { aspect-ratio: auto; height: var(--mh); }
 .work-card.short { width: calc(var(--mh) * 9 / 16); }
-.vid { position: relative; height: var(--mh); border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: var(--ink-2); cursor: pointer; }
+.work-card .vid { height: var(--mh); }
+.vid { position: relative; border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: var(--ink-2); cursor: pointer; }
 .vid video { width: 100%; height: 100%; object-fit: cover; }
 .vid:hover .yt-play { transform: translate(-50%, -50%) scale(1.08); background: var(--white); }
 .vid.playing { cursor: default; }
@@ -338,3 +339,16 @@ section { position: relative; }
   *, *::before, *::after { animation: none !important; transition: none !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* ---------- Hero entrance: photo first, then the left side ---------- */
+.hero-in { opacity: 0; animation: heroIn .9s var(--ease) forwards; animation-delay: var(--d, 0s); }
+.hero-media.hero-in { animation-name: heroPhotoIn; animation-duration: 1.4s; }
+@keyframes heroIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: none; } }
+@keyframes heroPhotoIn { from { opacity: 0; transform: scale(1.04); } to { opacity: 1; transform: none; } }
+@media (max-width: 900px) { @keyframes heroPhotoIn { from { opacity: 0; } to { opacity: .38; } } }
+@media (prefers-reduced-motion: reduce) { .hero-in { opacity: 1; animation: none; } }
+@media (prefers-reduced-motion: reduce) and (max-width: 900px) { .hero-media.hero-in { opacity: .38; } }
+
+/* ---------- Testimonial phones ---------- */
+.phone.vid { border-radius: 42px; border: 10px solid #151515; height: auto; }
+.phone.vid.playing::before { display: none; }
