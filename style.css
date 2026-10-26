@@ -208,6 +208,11 @@ section { position: relative; }
 .work-card { flex: none; width: calc(var(--mh) * 16 / 9); scroll-snap-align: start; }
 .work-card .yt { aspect-ratio: auto; height: var(--mh); }
 .work-card.short { width: calc(var(--mh) * 9 / 16); }
+.vid { position: relative; height: var(--mh); border-radius: 8px; overflow: hidden; border: 1px solid var(--line); background: var(--ink-2); cursor: pointer; }
+.vid video { width: 100%; height: 100%; object-fit: cover; }
+.vid:hover .yt-play { transform: translate(-50%, -50%) scale(1.08); background: var(--white); }
+.vid.playing { cursor: default; }
+.vid.playing .yt-play { display: none; }
 .work-card.short .work-meta { flex-direction: column; align-items: flex-start; gap: 8px; }
 .work-meta { display: flex; justify-content: space-between; align-items: baseline; gap: 16px; margin-top: 18px; }
 .work-meta h3 { font-family: var(--display); font-weight: 800; font-size: clamp(18px, 1.9vw, 26px); letter-spacing: -.03em; line-height: 1.15; }
@@ -314,7 +319,7 @@ section { position: relative; }
   .work-card { width: 85vw; }
   .work-card.short { width: 55vw; }
   .work-meta { flex-direction: column; align-items: flex-start; gap: 8px; }
-  .work-card.short .yt { height: auto; aspect-ratio: 9 / 16; }
+  .work-card.short .yt, .work-card.short .vid { height: auto; aspect-ratio: 9 / 16; }
   .why, .about { grid-template-columns: 1fr; }
   .about-photo { max-width: 460px; }
 }
