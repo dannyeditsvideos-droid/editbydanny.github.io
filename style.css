@@ -156,7 +156,6 @@ section { position: relative; }
 .work-card.feature { grid-column: 1 / -1; display: grid; grid-template-columns: 1.6fr 1fr; }
 .work-card.feature .work-info { display: flex; flex-direction: column; justify-content: center; padding: 28px 32px; }
 .work-card.feature .work-desc { font-size: clamp(18px, 1.5vw, 21px); margin-top: 18px; }
-.work-card.short .embed { aspect-ratio: 1 / 1; }
 .work-info { padding: 20px 22px 24px; }
 .who { display: flex; align-items: center; gap: 14px; }
 .who > div { flex: 1; min-width: 0; }
