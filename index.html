@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EditByDanny — Video editor for creators</title>
-  <meta name="description" content="Danny — video editor for creators. Clear communication, real deadlines, and videos you're proud of.">
+  <title>EditByDanny | Video editor for creators</title>
+  <meta name="description" content="Danny, video editor for creators. Clear communication, real deadlines, and videos you're proud of.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..900&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
     <a href="#top" class="logo">EDITBY<span>DANNY</span></a>
     <nav class="nav-links">
       <a href="#work">Work</a>
-      <a href="#clients" class="nav-clients">Clients</a>
+      <a href="#clients">Clients</a>
       <a href="#about">About</a>
       <a href="#contact" class="nav-cta">Work with me</a>
     </nav>
@@ -31,14 +31,12 @@
       <div class="hero-media hero-in" style="--d:0s; background-image:url('hero.jpg')" aria-hidden="true"></div>
 
       <div class="hero-content">
-        <p class="eyebrow hero-in" style="--d:.7s"><span class="dot"></span><strong>Danny</strong> — Video editor for creators</p>
+        <p class="eyebrow hero-in" style="--d:.7s"><span class="dot"></span><strong>Danny</strong> · Video editor for creators</p>
 
         <h1 class="hero-title hero-in" style="--d:.85s">Editing made <span class="accent">easy.</span></h1>
 
-        <div class="yt hero-reel hero-in" style="--d:1s" data-id="lNMr1pJaIF8" data-title="Danny's showreel">
-          <span class="yt-label">Showreel</span>
-          <button class="yt-play" aria-label="Play showreel"></button>
-          <span class="yt-hint">Tap for sound</span>
+        <div class="embed hero-reel hero-in" style="--d:1s">
+          <iframe src="https://www.youtube.com/embed/lNMr1pJaIF8?rel=0" title="Danny's showreel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </div>
 
         <p class="hero-sub hero-in" style="--d:1.15s"><strong>I'm Danny.</strong> I make editing the easiest part of a creator's business, with clear communication, real deadlines, and videos they're proud of.</p>
@@ -48,143 +46,117 @@
           <a href="#work" class="btn btn-ghost">Watch the edits</a>
         </div>
       </div>
-
-      <span class="scroll-cue mono">Scroll</span>
     </section>
 
-    <!-- ============ TRUSTED BY ============ -->
-    <section class="trusted reveal">
-      <p class="trusted-label">Trusted by:</p>
-      <ul class="trusted-list">
-        <li title="Josh Beam"><span class="avatar lg"><img src="josh-beam.jpg" alt="Josh Beam" onerror="this.remove()">JB</span></li>
-        <li title="Dan Martin"><span class="avatar lg"><img src="dan-martin.jpg" alt="Dan Martin" onerror="this.remove()">DM</span></li>
-        <li title="Cyfal"><span class="avatar lg"><img src="cyfal.jpg" alt="Cyfal" onerror="this.remove()">CY</span></li>
-        <li title="BradyYourTutor"><span class="avatar lg"><img src="brady.jpg" alt="BradyYourTutor" onerror="this.remove()">BT</span></li>
-      </ul>
-    </section>
+    <!-- ============ MY BEST WORK ============ -->
+    <section class="work container" id="work">
+      <div class="reveal">
+        <p class="kicker">Selected edits</p>
+        <h2 class="section-title">My best <span class="accent">work.</span></h2>
+      </div>
 
-    <!-- ============ WORK (horizontal scroll) ============
-         Each card's data-id is the YouTube video ID.
-         Add class "short" to a card for vertical (Shorts) videos.
-         A card whose ID is still a placeholder (ALL_CAPS) stays hidden. -->
-    <section class="work" id="work">
-      <div class="work-pin">
-        <div class="work-head">
-          <div>
-            <p class="kicker">Selected edits</p>
-            <h2 class="section-title">The work.</h2>
+      <div class="work-grid">
+
+        <article class="work-card feature reveal">
+          <div class="embed">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/CrQhd1IAeGg?rel=0" title="Josh Beam video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
           </div>
-          <p class="mono work-hint">Keep scrolling → moves sideways</p>
-        </div>
-
-        <div class="work-track">
-          <article class="work-card">
-            <div class="yt" data-id="CrQhd1IAeGg" data-title="Josh Beam video">
-              <button class="yt-play" aria-label="Play Josh Beam video"></button>
+          <div class="work-info">
+            <div class="who">
+              <img class="avatar" src="josh-beam.jpg" alt="">
+              <div><h3>Josh Beam</h3><p class="subs">150K subscribers</p></div>
             </div>
-            <div class="work-meta">
-              <h3>Josh Beam — 150K Subscribers</h3>
               <span class="tag mono">BJJ · Martial arts</span>
-            </div>
-            <p class="work-title">Cinematic storytelling — every shot earns its place by moving the story forward.</p>
-          </article>
+            <p class="work-desc">Cinematic storytelling, where every shot earns its place by moving the story forward.</p>
+          </div>
+        </article>
 
-          <article class="work-card">
-            <div class="yt" data-id="OFmrd_warpQ" data-title="How this one Japanese meal structure solved my biggest problem">
-              <button class="yt-play" aria-label="Play Dan Martin video"></button>
+        <article class="work-card reveal">
+          <div class="embed">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/OFmrd_warpQ?rel=0" title="Dan Martin video" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="work-info">
+            <div class="who">
+              <img class="avatar" src="dan-martin.jpg" alt="">
+              <div><h3>Dan Martin</h3><p class="subs">77K subscribers</p></div>
             </div>
-            <div class="work-meta">
-              <h3>Dan Martin — 77K Subscribers</h3>
               <span class="tag mono">Food · Health</span>
-            </div>
-            <p class="work-title">Recipe videos paced so viewers can follow along and actually cook the dish.</p>
-          </article>
+            <p class="work-desc">Recipe videos paced so viewers can follow along and actually cook the dish.</p>
+          </div>
+        </article>
 
-          <article class="work-card">
-            <div class="yt" data-id="RY93N2FonpY" data-title="Cyfal VSL">
-              <button class="yt-play" aria-label="Play Cyfal VSL"></button>
+        <article class="work-card reveal">
+          <div class="embed">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/RY93N2FonpY?rel=0" title="Cyfal VSL" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="work-info">
+            <div class="who">
+              <img class="avatar" src="cyfal.jpg" alt="">
+              <div><h3>Cyfal</h3><p class="subs">14K subscribers</p></div>
             </div>
-            <div class="work-meta">
-              <h3>Cyfal — 14K Subscribers</h3>
               <span class="tag mono">Music production</span>
-            </div>
-            <p class="work-title">VSL for Cyfal's program, <em>The Sound Formula</em>.</p>
-          </article>
+            <p class="work-desc">VSL for Cyfal's program, <em>The Sound Formula</em>.</p>
+          </div>
+        </article>
 
-          <article class="work-card short">
-            <div class="yt" data-id="xj_0CrsMus8" data-title="BradyYourTutor short">
-              <button class="yt-play" aria-label="Play BradyYourTutor short"></button>
+        <article class="work-card short reveal">
+          <div class="embed">
+            <iframe loading="lazy" src="https://www.youtube.com/embed/xj_0CrsMus8?rel=0" title="BradyYourTutor short" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </div>
+          <div class="work-info">
+            <div class="who">
+              <img class="avatar" src="brady.jpg" alt="">
+              <div><h3>BradyYourTutor</h3><p class="subs">3.4M subscribers</p></div>
             </div>
-            <div class="work-meta">
-              <h3>BradyYourTutor — 3.4M Subscribers</h3>
               <span class="tag mono">Trivia</span>
-            </div>
-          </article>
+            <p class="work-desc">Trivia shorts paced to keep viewers guessing right up to the answer.</p>
+          </div>
+        </article>
 
-          <article class="work-card short">
-            <div class="vid">
-              <video src="je-remodelling.mp4" poster="je-remodelling.jpg" playsinline preload="none"></video>
-              <button class="yt-play" aria-label="Play J&amp;E Remodelling short"></button>
+        <article class="work-card short reveal">
+          <div class="embed">
+            <video src="je-remodelling.mp4" poster="je-remodelling.jpg" controls playsinline preload="none"></video>
+          </div>
+          <div class="work-info">
+            <div class="who">
+              <span class="avatar avatar-text">J&amp;E</span>
+              <div><h3>J&amp;E Remodelling</h3><p class="subs">3.2K followers</p></div>
             </div>
-            <div class="work-meta">
-              <h3>J&amp;E Remodelling — 3.2K Followers</h3>
               <span class="tag mono">Short form</span>
-            </div>
-          </article>
-        </div>
+            <p class="work-desc">A short form spotlight on the craft and the crew behind every remodel.</p>
+          </div>
+        </article>
+
       </div>
     </section>
 
-    <!-- ============ WHY ME ============ -->
-    <section class="why container">
-      <div class="why-text reveal">
-        <p class="kicker">Why me</p>
-        <h2 class="section-title">Why I'm different.</h2>
-        <p class="lead">You send the footage. I bring the ideas, hit the deadline, and keep you in the loop the whole way. No chasing, no guessing — just a video you're proud to upload.</p>
-        <ul class="why-points">
-          <li><span class="mono accent">01</span>Clear communication — you always know where your video is.</li>
-          <li><span class="mono accent">02</span>Real deadlines — agreed up front, and kept.</li>
-          <li><span class="mono accent">03</span>Creative input — I pitch ideas, not just cuts.</li>
-        </ul>
-      </div>
-      <div class="yt why-video reveal" data-id="UL7yYBQuFn8" data-title="Why I'm different">
-        <button class="yt-play" aria-label="Play video"></button>
-      </div>
-    </section>
-
-    <!-- ============ TESTIMONIALS (phones) ============ -->
+    <!-- ============ TESTIMONIALS ============ -->
     <section class="clients container" id="clients">
       <div class="reveal">
-        <p class="kicker">Testimonials</p>
-        <h2 class="section-title">Clients, in their own words.</h2>
+        <p class="kicker">Client love</p>
+        <h2 class="section-title">Testimonials.</h2>
       </div>
 
       <div class="phones">
         <figure class="phone-card reveal">
-          <div class="phone vid">
-            <video src="testimonial-josh.mp4" poster="testimonial-josh.jpg" playsinline preload="none"></video>
-            <button class="yt-play" aria-label="Play Josh Beam's testimonial"></button>
-          </div>
+          <div class="phone"><video src="testimonial-josh.mp4" poster="testimonial-josh.jpg" controls playsinline preload="none"></video></div>
           <figcaption>
             <div class="phone-meta"><b>Josh Beam</b><span class="mono">150K subscribers</span></div>
+            <blockquote>“Danny helped me monetize my 2nd channel.”</blockquote>
           </figcaption>
         </figure>
         <figure class="phone-card reveal">
-          <div class="phone vid">
-            <video src="testimonial-dan.mp4" poster="testimonial-dan.jpg" playsinline preload="none"></video>
-            <button class="yt-play" aria-label="Play Dan Martin's testimonial"></button>
-          </div>
+          <div class="phone"><video src="testimonial-dan.mp4" poster="testimonial-dan.jpg" controls playsinline preload="none"></video></div>
           <figcaption>
             <div class="phone-meta"><b>Dan Martin</b><span class="mono">77K subscribers</span></div>
+            <blockquote>“Super easy to work with, really cares about the content.”</blockquote>
           </figcaption>
         </figure>
         <figure class="phone-card reveal">
-          <div class="phone vid">
-            <video src="testimonial-cyfal.mp4" poster="testimonial-cyfal.jpg" playsinline preload="none"></video>
-            <button class="yt-play" aria-label="Play Cyfal's testimonial"></button>
-          </div>
+          <div class="phone"><video src="testimonial-cyfal.mp4" poster="testimonial-cyfal.jpg" controls playsinline preload="none"></video></div>
           <figcaption>
             <div class="phone-meta"><b>Cyfal</b><span class="mono">14K subscribers</span></div>
+            <blockquote>“Helped me build authority, getting me more sales!”</blockquote>
           </figcaption>
         </figure>
       </div>
@@ -194,59 +166,45 @@
     <section class="process container">
       <div class="reveal">
         <p class="kicker">The process</p>
-        <h2 class="section-title">How we'll work together.</h2>
+        <h2 class="section-title">My easy editing <span class="accent">process.</span></h2>
       </div>
       <ol class="steps">
         <li class="reveal"><span class="step-num">1</span><h3>Discovery call</h3><p>We talk about your channel, your audience, and what you want each video to do.</p></li>
-        <li class="reveal"><span class="step-num">2</span><h3>Story and structure</h3><p>I go through your footage and map out the story before a single cut.</p></li>
-        <li class="reveal"><span class="step-num">3</span><h3>The edit</h3><p>Pacing, sound design, graphics and colour — all pulling in the same direction.</p></li>
-        <li class="reveal"><span class="step-num">4</span><h3>Revisions and delivery</h3><p>You review a cut, I polish it, and you get final files ready to upload — on the date we agreed.</p></li>
+        <li class="reveal"><span class="step-num">2</span><h3>Story and structure</h3><p>I'll go through your footage and map out a game plan before a single cut.</p></li>
+        <li class="reveal"><span class="step-num">3</span><h3>The edit</h3><p>Time to start cooking. I bring your video to life with pacing, graphics, and sound design.</p></li>
+        <li class="reveal"><span class="step-num">4</span><h3>BAM, it's done</h3><p>You review the video, I make the changes, and together we finish a masterpiece 🤝</p></li>
       </ol>
     </section>
 
     <!-- ============ ABOUT ============ -->
     <section class="about container" id="about">
-      <div class="about-photo reveal" style="background-image:url('about.jpg')" role="img" aria-label="Danny with his hand raised after winning a BJJ match"></div>
-
-      <div class="about-text reveal">
-        <p class="kicker">About</p>
-        <h2 class="section-title">Hey, I'm Danny!</h2>
-
-        <p>Before I edited full time, I worked for my local martial arts gym where I managed their social media. Not only did I edit videos, but I also created flyers, came up with different deals, and helped set up smokers with my coach — helping him grow his business in the process. I also ran my own YouTube channel for fun, documenting my own martial arts journey.</p>
-        <p>These experiences helped me understand the ins and outs of running a business, and what making content is like from the perspective of both an editor and a creator. With those experiences, I decided to pursue editing and make something out of it.</p>
-        <p>It was difficult at first, but I began working with multiple creators and improving my editing in the process. I really started to fall in love with editing. Something about building and finishing a story was so satisfying, and I began obsessing over my craft.</p>
-        <p>However, I also started seeing the ugly side of editing. I've seen too many creators get burned by editors who ghost, miss deadlines, and never bring any creativity to their work.</p>
-
+      <div class="about-side reveal">
+        <div class="about-photo" style="background-image:url('about.jpg')" role="img" aria-label="Danny with his hand raised after winning a BJJ match"></div>
         <div class="mission">
           <p class="mono accent">My mission</p>
           <p class="mission-line">I'm here to prove an editor can be the easiest part of your business: clear communication, respect, and a video you're proud of.</p>
         </div>
       </div>
-    </section>
 
-    <!-- ============ FAQ (hidden for now — delete the comment markers around this section to bring it back) ============
-    <section class="faq container">
-      <div class="reveal">
-        <p class="kicker">FAQ</p>
-        <h2 class="section-title">Questions you might have.</h2>
-      </div>
-      <div class="faq-list">
-        <details class="reveal"><summary>What kind of videos do you edit?</summary><p>Long-form YouTube videos, VSLs and short-form content for creators. I've edited for martial arts, food and health, music production, education and home renovation channels.</p></details>
-        <details class="reveal"><summary>How much does a video cost?</summary><p>[Add your pricing here]</p></details>
-        <details class="reveal"><summary>How long does it take?</summary><p>[Add your turnaround here] Whatever deadline we agree, I keep.</p></details>
-        <details class="reveal"><summary>How do I get started?</summary><p>Send me a message on any of the links below with a link to your channel. We'll book a quick call and go from there.</p></details>
-        <details class="reveal"><summary>Why you over a cheaper editor?</summary><p>Because a cheap edit that's late, needs five rounds of fixes, or never brings an idea to the table isn't cheap. You get reliable communication, real deadlines, and an editor who cares how the video performs.</p></details>
+      <div class="about-text reveal">
+        <p class="kicker">About</p>
+        <h2 class="section-title">Hey, I'm Danny!</h2>
+
+        <p>Before I edited full time, I worked for my local martial arts gym where I managed their social media. Not only did I edit videos, but I also created flyers, came up with different deals, and helped set up smokers with my coach, helping him grow his business in the process. I also ran my own YouTube channel for fun, documenting my own martial arts journey.</p>
+        <p>These experiences helped me understand the ins and outs of running a business, and what making content is like from the perspective of both an editor and a creator. With those experiences, I decided to pursue editing and make something out of it.</p>
+        <p>It was difficult at first, but I began working with multiple creators and improving my editing in the process. I really started to fall in love with editing. Something about building and finishing a story was so satisfying, and I began obsessing over my craft.</p>
+        <p>However, I also started seeing the ugly side of editing. I've seen too many creators get burned by editors who ghost, miss deadlines, and never bring any creativity to their work.</p>
       </div>
     </section>
-    ============ END FAQ ============ -->
 
-    <!-- ============ CONTACT ============ -->
-    <section class="contact" id="contact">
-      <div class="container reveal">
-        <h2 class="contact-title">Ready to work <span class="accent">together?</span></h2>
-        <p class="contact-sub">Reach out wherever's easiest — I look forward to hearing from you.</p>
+    <!-- ============ CONTACT + FOOTER (share one background) ============ -->
+    <div class="finale">
+      <section class="contact" id="contact">
+        <div class="container reveal">
+          <h2 class="contact-title">Ready to work <span class="accent">together?</span></h2>
+          <p class="contact-sub">Reach out wherever's easiest. I look forward to hearing from you.</p>
 
-        <ul class="socials">
+          <ul class="socials">
           <li><a class="social" href="https://www.instagram.com/editbydanny/" target="_blank" rel="noopener" aria-label="Instagram">
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg><span>Instagram</span></a></li>
           <li><a class="social" href="https://x.com/editbydanny2" target="_blank" rel="noopener" aria-label="X (Twitter)">
@@ -257,103 +215,40 @@
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg><span>WhatsApp</span></a></li>
         </ul>
 
-        <a class="contact-email" href="mailto:dannyeditsvideos@gmail.com">dannyeditsvideos@gmail.com</a>
-      </div>
-    </section>
+          <a class="contact-email" href="mailto:dannyeditsvideos@gmail.com">dannyeditsvideos@gmail.com</a>
+        </div>
+      </section>
+
+      <footer class="footer">
+        <div class="container footer-inner">
+          <span class="logo">EDITBY<span>DANNY</span></span>
+          <span class="mono">© <span id="year"></span> · Video editor for creators</span>
+        </div>
+      </footer>
+    </div>
   </main>
 
-  <footer class="footer container">
-    <span class="logo">EDITBY<span>DANNY</span></span>
-    <span class="mono">© <span id="year"></span> · Video editor for creators</span>
-  </footer>
-
   <script>
-    const isPlaceholder = id => !id || /^[A-Z_0-9]+$/.test(id);
-
-    /* ---------- Hide anything still waiting on a link ---------- */
-    document.querySelectorAll('.work-card, .phone-card').forEach(card => {
-      const yt = card.querySelector('.yt');
-      if (yt && isPlaceholder(yt.dataset.id)) card.remove();
-    });
-    if (!document.querySelector('.phone-card')) {
-      document.getElementById('clients')?.remove();
-      document.querySelector('.nav-clients')?.remove();
-    }
-    document.querySelectorAll('a[href^="#ADD_"]').forEach(a => a.closest('li').remove());
-
-    /* ---------- Self-hosted video (J&E) ---------- */
-    document.querySelectorAll('.vid').forEach(box => {
-      const v = box.querySelector('video');
-      box.addEventListener('click', () => {
-        if (box.classList.contains('playing')) return;
-        document.querySelectorAll('.vid video').forEach(o => { if (o !== v) o.pause(); });
-        box.classList.add('playing'); v.controls = true; v.play();
+    /* Only one video plays at a time */
+    document.querySelectorAll('video').forEach(v => {
+      v.addEventListener('play', () => {
+        document.querySelectorAll('video').forEach(o => { if (o !== v) o.pause(); });
       });
     });
 
-    /* ---------- YouTube: lightweight click-to-play ---------- */
-    document.querySelectorAll('.yt').forEach(el => {
-      const id = el.dataset.id;
-      if (isPlaceholder(id)) { el.classList.add('yt-empty'); return; }
-      const tall = el.classList.contains('yt-phone') || el.closest('.short');
-      el.style.backgroundImage = `url(https://i.ytimg.com/vi/${id}/hqdefault.jpg)`;
-      if (!tall) { // upgrade to the sharper thumbnail when it exists
-        const hi = new Image();
-        hi.onload = () => { if (hi.naturalWidth > 200) el.style.backgroundImage = `url(${hi.src})`; };
-        hi.src = `https://i.ytimg.com/vi/${id}/maxresdefault.jpg`;
-      }
-      el.addEventListener('click', () => {
-        if (el.classList.contains('yt-playing')) return;
-        el.innerHTML = `<iframe src="https://www.youtube-nocookie.com/embed/${id}?autoplay=1&rel=0&playsinline=1" title="${el.dataset.title || 'YouTube video'}" allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowfullscreen></iframe>`;
-        el.classList.add('yt-playing');
-      });
-    });
-
-    /* ---------- Scroll progress + sideways work section ---------- */
+    /* Scroll progress bar under the nav */
     const progress = document.querySelector('.progress');
-    const work = document.querySelector('.work');
-    const pin = document.querySelector('.work-pin');
-    const track = document.querySelector('.work-track');
-    const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
-    const desktop = matchMedia('(min-width: 900px)');
-    let distance = 0;
-
-    function sizeWork() {
-      track.style.transform = '';
-      if (desktop.matches && !reduce) {
-        work.classList.add('is-pinned');
-        const last = track.lastElementChild;
-        const gutter = parseFloat(getComputedStyle(track).paddingLeft) || 0;
-        // how far the track must travel so the last card ends one gutter from the right edge
-        distance = last ? Math.max(0, last.offsetLeft + last.offsetWidth + gutter - pin.clientWidth) : 0;
-        work.style.height = `${window.innerHeight + distance}px`;
-      } else {
-        work.classList.remove('is-pinned');
-        work.style.height = '';
-        distance = 0;
-      }
-      onScroll();
-    }
-
     function onScroll() {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       progress.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
-      if (distance) {
-        const p = Math.min(1, Math.max(0, -work.getBoundingClientRect().top / distance));
-        track.style.transform = `translate3d(${-p * distance}px,0,0)`;
-      }
     }
-
     window.addEventListener('scroll', onScroll, { passive: true });
-    window.addEventListener('resize', sizeWork);
-    window.addEventListener('load', sizeWork);
-    if (document.fonts) document.fonts.ready.then(sizeWork);
-    sizeWork();
+    onScroll();
 
-    /* ---------- Reveal on scroll ---------- */
+    /* Fade sections in as they scroll into view */
     const io = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
-    }, { threshold: 0.15 });
+    }, { threshold: 0.12 });
     document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
     document.getElementById('year').textContent = new Date().getFullYear();
