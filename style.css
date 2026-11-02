@@ -273,3 +273,5 @@ section { position: relative; }
   .shorts-grid { grid-template-columns: minmax(0, 340px); }
   .shorts-grid .work-card.short .embed { max-height: none; }
 }
+.work-card.center { grid-column: 1 / -1; justify-self: center; width: calc(50% - clamp(18px, 2.4vw, 32px) / 2); }
+@media (max-width: 900px) { .work-card.center { width: 100%; } }
