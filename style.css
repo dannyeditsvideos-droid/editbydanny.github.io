@@ -262,3 +262,14 @@ section { position: relative; }
 @media (prefers-reduced-motion: reduce) and (max-width: 900px) {
   .hero-media.hero-in { opacity: .38; }
 }
+
+/* ---------- Long form / short form split ---------- */
+.work-sub { margin-top: clamp(40px, 7vh, 72px); }
+.work-sub + .work-grid { margin-top: 20px; }
+.sub-title { font-family: var(--display); font-weight: 800; font-size: clamp(24px, 2.6vw, 34px); letter-spacing: -.03em; line-height: 1.1; }
+.shorts-grid { grid-template-columns: repeat(2, minmax(0, 340px)); justify-content: center; }
+.shorts-grid .work-card.short .embed { aspect-ratio: 9 / 16; }
+@media (max-width: 900px) {
+  .shorts-grid { grid-template-columns: minmax(0, 340px); }
+  .shorts-grid .work-card.short .embed { max-height: none; }
+}
