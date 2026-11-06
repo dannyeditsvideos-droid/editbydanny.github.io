@@ -234,3 +234,18 @@ section { position: relative; }
 .card.short .dot { display: none; }
 .card.short .byline span:not(.by-name):not(.tag) { flex-basis: 100%; order: 2; margin-top: -6px; }
 .card.short .tag { order: 3; }
+
+/* ---------- No fade-ins ---------- */
+.reveal, .hero-in { opacity: 1 !important; transform: none !important; animation: none !important; transition: none !important; }
+
+/* ---------- Line up bylines across each row ---------- */
+.grid-2 .card { display: flex; flex-direction: column; }
+.grid-2 .card .card-title { flex: 1; }
+
+/* ---------- Trusted strip sits right under the hero ---------- */
+.hero { min-height: 0 !important; }
+
+/* ---------- Testimonials, tighter like Sabo ---------- */
+.testi-grid { grid-template-columns: repeat(3, minmax(0, 300px)); }
+.proof-wall { columns: 3 240px; column-gap: 18px; }
+.proof { margin-bottom: 18px; }
