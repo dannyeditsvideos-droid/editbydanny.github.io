@@ -249,3 +249,15 @@ section { position: relative; }
 .testi-grid { grid-template-columns: repeat(3, minmax(0, 300px)); }
 .proof-wall { columns: 3 240px; column-gap: 18px; }
 .proof { margin-bottom: 18px; }
+.testi-grid { grid-template-columns: repeat(4, minmax(0, 260px)); }
+@media (max-width: 900px) { .testi-grid { grid-template-columns: repeat(4, minmax(220px, 1fr)); } }
+.testi { display: flex; flex-direction: column; }
+.testi figcaption { flex: 1; display: flex; flex-direction: column; }
+.testi blockquote { flex: 1; font-size: clamp(17px, 1.3vw, 20px); }
+.testi .dot { display: none; }
+.testi .byline { flex-wrap: nowrap; }
+.testi .byline span:last-child { margin-left: auto; white-space: nowrap; }
+.testi .byline { display: grid; grid-template-columns: auto 1fr; grid-template-rows: auto auto; column-gap: 10px; row-gap: 0; align-items: center; }
+.testi .byline img { grid-row: 1 / 3; width: 38px; height: 38px; }
+.testi .byline .by-name { white-space: nowrap; line-height: 1.25; }
+.testi .byline span:last-child { margin-left: 0; font-size: 14px; line-height: 1.25; }
